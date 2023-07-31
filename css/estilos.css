@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap');
+
+body{
+    background-image: url(../img/background.svg);
+    background-attachment: fixed;      
+    background-position: center;
+    background-repeat: no-repeat;       
+    background-size: cover;
+    
+}
+.contenedor{    
+        /*width: 100%;*/
+        margin-inline: auto;
+        max-width: 62ch;
+        padding-inline-start:2rem;
+        padding-inline-end: 2rem;
+        background-color: #1a202c;
+        border-radius: 12px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 0px 1px,rgba(0, 0, 0, 0.2) 0px 5px 10px,rgba(0, 0, 0, 0.4) 0px 15px 40px;;
+        margin-top:1rem;
+        margin-bottom: 1rem;
+        padding-top:1rem;
+        padding-bottom: 1rem;
+}
+p{
+    /*font-family: 'Inter', sans-serif;*/
+    font-family: 'Fira Mono', monospace;
+    color: #ffffff;
+    line-height: 30px;
+}
+
+/*H1 de portafolio*/
+h1{    
+    font-family: 'Fira Mono', monospace;
+    color: #ffffff;
+    text-align: center;
+    
+}
+.portafolio{  
+    font-family: 'Fira Mono', monospace;
+    color: #ffffff;
+    text-align: center;
+}
+.perfil{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+    margin-top: 5%;
+
+}
+.perfil img{
+    width: 135px;
+    border: 5px solid #ffffff;
+    border-radius: 50%;
+    padding: 3px;
+}
+a{
+    text-align: center;    
+    font-family: 'Fira Mono', monospace;
+    color: #ffffff;
+    line-height: 30px;
+    text-decoration: none;
+}
+a:hover{
+    text-align: center;
+    font-family: 'Fira Mono', monospace;
+    line-height: 30px;
+    color: aqua;
+    text-decoration: none;
+}
+.opc1,.opc2,.opc3,.opc4{
+    border-radius: 12px;
+    border-width: 2px;
+    border-color: #9d9d9d;
+    padding: 1rem;
+    border-style: solid;
+    cursor: pointer;
+    text-align: center; 
+    font-family: 'Fira Mono', monospace;
+    color: #ffffff;
+    line-height: 30px;
+    margin-top: 25px;    
+    transition: 0.3s;
+}
+.opc1:hover{
+    border-color: #6b4eff;
+    background-color: #2f3a51;
+    color: aqua;
+}
+.opc2:hover{
+    border-color: #6b4eff;
+    background-color: #2f3a51;
+    color: aqua;
+}
+.opc3:hover{
+    border-color: #6b4eff;
+    background-color: #2f3a51;
+    color: aqua;
+}
+.opc4:hover{
+    border-color: #6b4eff;
+    background-color: #2f3a51;
+    color: aqua;
+}
+.footer{
+    text-align: center;
+}
+.sections_portafolio{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+.presentacion{
+    text-align: center;
+    margin-left: 20%;
+    margin-right:20%;
+    
+}
+.descripcion{
+    text-align: center;
+  
+}
+.presentacion p{
+    position: relative;
+    width: 22ch;
+    margin-top: 2vmin;
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 0;
+    animation: typing 3s steps(20), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: 'Fira Mono', monospace;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+@keyframes blink {
+    50% {
+        border-color: #a5232300;
+    }
+}
+
+@media only screen and (min-width: 480px) {
+    .presentacion{
+        text-align: center;
+        margin-left: 25%;
+        margin-right:25%;               
+    }
+    .descripcion{
+        text-align: center;
+        margin-left: 25%;
+        margin-right:25%;
+        font-size: 16px;
+    } 
+    .presentacion p{
+        position: relative;
+        width: 22ch;
+        margin-top: 2vmin;
+        font-size: 18px;
+        font-weight: 400;
+        margin-bottom: 0;
+        animation: typing 3s steps(20), blink .5s step-end infinite alternate;
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 3px solid;
+        font-family: 'Fira Mono', monospace;
+    }
+    .footer{
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 479px) {
+    .presentacion{
+        text-align: center;
+        margin-left: 20%;
+        margin-right:20%;                
+    }
+    .descripcion{
+        text-align: center;
+        margin-left: 20%;
+        margin-right:20%;
+        font-size: 14px;
+    } 
+    .presentacion p{
+        position: relative;
+        width: 22ch;
+        margin-top: 2vmin;
+        font-size: 16px;
+        font-weight: 400;
+        margin-bottom: 0;
+        animation: typing 3s steps(20), blink .5s step-end infinite alternate;
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 3px solid;
+        font-family: 'Fira Mono', monospace;
+    }
+    .footer{
+        font-size: 13px;
+    }
+}
